@@ -6,8 +6,15 @@
     <title>DOM MANIPULATION AND LEARNING </title>
 </head>
 <body style="background-color: #212121;color: aliceblue;" class="body">
+   
     <h1>LEARN WITH CHAI WITH CODE HAVING COFFIWe</h1>
-
+    <div class="parent">
+        <!-- hell thsi is comment so  it will also count as a node  -->
+        <div class="day">MANIPULATION/ on monday</div>
+        <div class="day">tue</div>
+        <div class="day">wednesday</div>
+        <div class="day">thrusday <span>ok</span></div>
+    </div>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla iste quidem delectus pariatur ratione veritatis, dolores dicta iure minima amet unde tempore iusto, omnis ad natus exercitationem voluptas officia eligendi neque minus!</p>
     <ul id="ullist">
         <li class="list-item">one</li>
@@ -15,5 +22,28 @@
         <li class="list-item">kulla</li>
         <li class="list-item">julla julu </li>
     </ul>
+    <script>
+        const par = (document.querySelector('.parent'));
+        console.log(par);
+        console.log(par.children);
+        const pc = par.children;
+        console.log(pc[2].innerHTML);
+        // for (let index = 0; index < par.children.length; index++) {
+        //     console.log(par.children[index].innerHTML);
+        //     if(index % 2 == 0){
+        //         par.children[index].style.backgroundColor = 'orange';
+        //         par.children[index].style.color = 'black';
+                
+        //     }
+        // }
+        // console.log(par.lastElementChild);
+            // const parent = document.querySelector('.parent');
+            // console.log(parent);
+            // console.log("NODES : ",par.childNodes)
+            // const childs = document.querySelector('.parent.children');
+            const veryImpProperty = par.childNodes;
+            // console.log(childs);
+            console.log("because many of things in the react are dn by memory mai daal ke child nodes ke through ke karte hai :",veryImpProperty);
+    </script>
 </body>
 </html>
