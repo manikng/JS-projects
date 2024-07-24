@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <title>Your Local Time</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: white;
+      }
+      .center {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #clock {
+        font-size: 7.2vw;
+        background-color:orange;
+        padding: 2.7vw 5.7vw;
+        margin-top: 5.9vh;
+        /* border-bradius: 10px; */
+        border-bottom-right-radius : 9vw;
+        border-top-left-radius : 9vw;
+
+      }
+      .navButton{
+        background-color : black;
+        color: orange;
+        border-bottom-right-radius : 9vw;
+        border-top-left-radius : 9vw;
+        border-color : blue;
+      }
+      nav{
+        background-color : black;
+        color: orange;
+        border-bottom-right-radius : 9vw;
+        border-top-left-radius : 9vw;
+      }
+      #homeButton{
+        background-color :black;
+        color:orange;
+        font-family : cursive;
+      }
+      .foot{
+        background-color :#c1432e;
+        font-family : cursive;
+        display : flex;
+        flex-direction : column;
+        justify-content : center;
+        align-item : center;
+        height: 100vh;
+      }
+      h3,h1{
+        background-color :#c1432e;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page" class="navButton" id="homeButton">Home</a>
+      <a target="_blank" href="https://github.com/manikng/JS-projects"
+         class="navButton">Source Code</a
+      >
+    </nav>
+    <div class="center">
+      <div id="banner"><span>Your local time</span></div>
+      <div id="clock"></div>
+    </div>
+ <div class="foot">
+  <h3>SO THIS IS YOUR CURRENT TIME </h3>
+  <h1>HELLO I AM WHO I AM i mean TIME</h1>
+ </div>
+    <script src="Iwithcode.js"></script>
+  </body>
+</html>
