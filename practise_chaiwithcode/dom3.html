@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>i am or i am the who</title>
 </head>
-<body>
+<body style="background-color: #212132; color : orange">
     <ul class="lng">
-        <li>TypeScript</li>
+        <li class= "langl">TypeScript</li>
     </ul>
     <script>
-        
+        //premium color : #2122234
+        function addlang(lang) {
+            // const ul = document.querySelector('.lang');
+            // console.log(li.parentElement);
+            // console.log(li);
+            // ul.firstChild.appendChild(lang)
+            const li = document.createElement('li');
+            // li.innerHTML = `${lang}`;
+            // li.innerHTML = lang;
+            // li.innerText = lang;
+            //use this method usually always   bbbbbbb 
+            const newnode = document.createTextNode(lang);
+            li.appendChild(newnode);
+            document.querySelector('.lng').appendChild(li);
+
+
+            // ul.appendChild(li); this is wrong because you have choosen it from classname
+
+        }
+        addlang('Python');
+        addlang("javascript")
+        const nthchild = document.querySelector('li:nth-child(2)')
+        console.log(nthchild.innerText);
+        // nthchild.innerText  = 'Iota with python'
+        // nthchild.remove()/
     </script>
 </body>
 </html>
