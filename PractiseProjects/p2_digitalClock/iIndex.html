@@ -34,17 +34,27 @@
         border-bottom-right-radius : 9vw;
         border-top-left-radius : 9vw;
         border-color : blue;
+        height : 2.2rem;
+
+        /* height: 302rem; */
       }
       nav{
         background-color : black;
         color: orange;
         border-bottom-right-radius : 9vw;
         border-top-left-radius : 9vw;
+        font-family : cursive;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+
       }
       #homeButton{
         background-color :black;
         color:orange;
-        font-family : cursive;
+        border-color: blue;
+       
       }
       .foot{
         background-color :#c1432e;
@@ -52,8 +62,9 @@
         display : flex;
         flex-direction : column;
         justify-content : center;
-        align-item : center;
-        height: 100vh;
+        align-items: center;
+        /* align-item : center; */
+        height: 50vh;
       }
       h3,h1{
         background-color :#c1432e;
@@ -62,10 +73,10 @@
   </head>
   <body>
     <nav>
-      <a href="/" aria-current="page" class="navButton" id="homeButton">Home</a>
-      <a target="_blank" href="https://github.com/manikng/JS-projects"
-         class="navButton">Source Code</a
-      >
+     <button  class="navButton"> <a href="/" aria-current="page" id="homeButton">Home</a></button>
+     <button  class="navButton"> <a target="_blank" href="https://github.com/manikng/JS-projects"
+      class="navButton">Source Code</a
+      ></button>
     </nav>
     <div class="center">
       <div id="banner"><span>Your local time</span></div>
