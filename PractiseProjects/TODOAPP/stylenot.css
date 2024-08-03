@@ -1,0 +1,128 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    /* background: linear-gradient(135deg, #153677, #4e085f); */
+}
+.container {
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative; */
+        width: 100%;
+        min-height: 100%;
+        background: linear-gradient(135deg, #153677, #4e085f);
+        /* padding: 20px; */
+    }
+
+.rand{
+    margin: 0 auto;
+}
+.todoapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(145deg, #e1831e, #4e085f);
+    padding-top: 3vh;
+    /* width: 50vw; when u are setting width it is in center but since the width is decreased it seems to be not aligned
+    to make this right use margin: auto 0 which makes it horizontally center with margin */
+    height: 100%;
+    width: 54rem;
+    margin: 0 auto;
+    
+    
+    /* max-width: 34rem; */
+    border-radius: 1.5rem;
+}
+.task{
+    position: relative; 
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    margin: 1vh 2vh;
+    /* padding: 0.4vw 1vw; if maine esa kiya to button full uper neeche puri tarah se 
+    fill nhi hoga bcz uske parent mai to padding de rakhi hai uper neeche  */
+}
+/* .todoapp h2 span img {
+    max-width: 15vw;
+    height: auto;
+    margin-left: 2vw;
+} */
+h2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.2rem 0;
+    font-size: 6vmax;
+    margin-bottom: 1rem; /* Add margin-bottom property */
+    color: #f5f5f5f5;
+    text-shadow: 7px 7px 0.4px rgb(13, 12, 12);
+}
+
+#imglogo {
+    height: auto;
+    width: auto;
+    border-radius: 2px;
+}
+/* 
+.inputbox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    position: sticky;
+    top: 1.2rem;
+} */
+
+#input {
+    flex: 1;
+    border-radius: 50% 20% / 10% 40%;
+    font-size: xx-large;
+    position: sticky;
+    top: 1.2rem;
+    font-family: cursive;
+    outline: none;
+    background: #e1831e;
+    border-radius: 50% 20% / 10% 40%;
+    padding: 0.8%;
+    width: 100%;
+
+}
+
+
+
+#button {
+    background: #4e085f;
+    color: #fff;
+    outline: none;
+    border-radius: 25% 10%;
+
+    font-family: cursive;
+    padding: 0.4rem 2rem;
+}
+
+#usertasklist {
+    list-style-type: none;
+    padding: 2rem 2rem;
+}
+
+#usertasklist li {
+    position: relative;
+    margin-bottom: 10px;
+} */
