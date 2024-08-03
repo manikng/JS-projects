@@ -1,67 +1,123 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body {
+
+html, body {
     height: 100%;
     width: 100%;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    font-family:'Courier New', Courier, monospace ;
-    
+    font-family: 'Courier New', Courier, monospace;
+    /* background: linear-gradient(135deg, #153677, #4e085f); */
 }
-.container{
-    background: linear-gradient(145deg, #bde11e, #4e085f);
-    /* margin-top: 5vh; */
-    padding-top: 3vh ;
-    height: 100vh;
-    width: 50vw;
-    /* margin: 0 auto; ye kisi bhi div ko horizontally center mai laata hai */
+.container {
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative; */
+        width: 100%;
+        min-height: 100%;
+        background: linear-gradient(135deg, #153677, #4e085f);
+        /* padding: 20px; */
+    }
+
+.rand{
     margin: 0 auto;
+}
+.task{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ededed;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    margin-bottom: 2vh;
+    /* padding: 0.4vw 1vw; if maine esa kiya to button full uper neeche puri tarah se 
+    fill nhi hoga bcz uske parent mai to padding de rakhi hai uper neeche  */
+}
+.todoapp {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background: linear-gradient(145deg, #bde11e, #4e085f);
+    padding-top: 3vh;
+    /* width: 50vw; when u are setting width it is in center but since the width is decreased it seems to be not aligned
+    to make this right use margin: auto 0 which makes it horizontally center with margin */
+    height: 90%;
+    width: 34rem;
+    margin: 0 auto;
+
+
+    /* max-width: 34rem; */
     border-radius: 1.5rem;
 }
-h2{
-    /* margin: 0 auto; this doesn't work because this is only for div */
+/* .todoapp h2 span img {
+    max-width: 15vw;
+    height: auto;
+    margin-left: 2vw;
+} */
+h2 {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0;
-    padding: 20px 0;
+    margin: 0 auto;
+    padding: 1.2rem 0;
+    margin-bottom: 1rem; /* Add margin-bottom property */
     color: #f5f5f5f5;
     text-shadow: 7px 7px 0.4px rgb(13, 12, 12);
-      
 }
-#imglogo{
-    /* object-fit: fill; */
-    margin: auto 0;
+
+#imglogo {
+    margin-right: 10px;
     height: 5em;
     width: 5em;
     border-radius: 3em;
-   
 }
-.todoapp{
+/* 
+.inputbox {
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 1rem;
-}
+    margin: 20px 0;
+    position: sticky;
+    top: 1.2rem;
+} */
 
-#input{
+#input {
+    flex: 1;
     border-radius: 50% 20% / 10% 40%;
-    /* border-radius: 23%; */
     font-size: xx-large;
+    position: sticky;
+    /* top: 1.2rem; */
     font-family: cursive;
     border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 50% 20% / 10% 40%;
     padding: 0.8%;
+    width: 80%;
 }
+
+
+
 #button {
     border-radius: 25% 10%;
     font-family: cursive;
-    margin: 12% 0;
     border: none;
     padding: 0.4rem 2rem;
+}
+
+#usertasklist {
+    list-style-type: none;
+    padding: 2rem 2rem;
+}
+
+#usertasklist li {
+    position: relative;
+    margin-bottom: 10px;
 }
