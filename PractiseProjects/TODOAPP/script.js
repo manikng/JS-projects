@@ -1,6 +1,13 @@
 const task = document.querySelector('#usertasklist');
 const userIofield = document.querySelector('#input');
 
+userIofield.addEventListener("keyup",(e)=>{
+    if(!e.repeat && e.key === 'Enter'){
+
+        usertaskadder();
+    }
+})
+
 function usertaskadder() {
     let userIo = userIofield.value;
     console.log(userIo);

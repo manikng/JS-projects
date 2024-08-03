@@ -5,12 +5,14 @@
 }
 
 html, body {
+
     height: 100%;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
+
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg, #153677, #4e085f);
@@ -34,6 +36,7 @@ html, body {
     margin: 0 auto;
     border-radius: 1.5rem;
     overflow: auto; /* Ensure content is scrollable if it overflows */
+    
 }
 
 .task {
@@ -62,7 +65,8 @@ h2 {
 }
 
 #input {
-    flex: 1;
+    position: sticky;
+    top:1.2rem;
     font-size: medium;
     font-family: cursive;
     outline: none;
