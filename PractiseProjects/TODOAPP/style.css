@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    font-family:'Courier New', Courier, monospace ;
+    
+}
+.container{
+    background: linear-gradient(145deg, #bde11e, #4e085f);
+    /* margin-top: 5vh; */
+    padding-top: 3vh ;
+    height: 100vh;
+    width: 50vw;
+    /* margin: 0 auto; ye kisi bhi div ko horizontally center mai laata hai */
+    margin: 0 auto;
+    border-radius: 1.5rem;
+}
+h2{
+    /* margin: 0 auto; this doesn't work because this is only for div */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #f5f5f5f5;
+    text-shadow: 7px 7px 0.4px rgb(13, 12, 12);
+      
+}
+#imglogo{
+    /* object-fit: fill; */
+    margin: auto 0;
+    height: 5em;
+    width: 5em;
+    border-radius: 3em;
+   
+}
+.todoapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+#input{
+    border-radius: 50% 20% / 10% 40%;
+    /* border-radius: 23%; */
+    font-size: xx-large;
+    font-family: cursive;
+    border: none;
+    padding: 0.8%;
+}
+#button {
+    border-radius: 25% 10%;
+    font-family: cursive;
+    margin: 12% 0;
+    border: none;
+    padding: 0.4rem 2rem;
+}
