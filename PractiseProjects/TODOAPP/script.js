@@ -19,5 +19,5 @@ function usertaskadder() {
        console.log(li.innerText)
        task.appendChild(li);
     }
-    // userIofield.value = '';
+    userIofield.value = '';
 }
